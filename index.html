@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naeim Khoshkenar | Personal Page</title>
+    <style>
+        :root {
+            --primary-orange: #ff6600;
+            --hover-orange: #e05500;
+            --text-dark: #2d3748;
+            --text-muted: #718096;
+            --bg-light: #f7fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* All links set to orange */
+        a {
+            color: var(--primary-orange);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--hover-orange);
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 2.5rem;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--border-color);
+        }
+
+        .header-info h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .header-info .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+        }
+
+        .contact-details {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .contact-details span {
+            display: inline-block;
+            margin-right: 12px;
+        }
+
+        /* Section Layouts */
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-dark);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* Timeline Lists (Education & Work) */
+        .timeline-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .timeline-meta {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+
+        .timeline-date {
+            color: var(--text-muted);
+            font-weight: normal;
+            font-size: 0.95rem;
+        }
+
+        .timeline-location {
+            font-style: italic;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .gpa {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        /* Grid Lists for Skills & Core Qualifications */
+        .grid-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .grid-list li {
+            background-color: var(--bg-light);
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            border-left: 3px solid var(--border-color);
+        }
+
+        /* Standard Item Layouts */
+        .info-row {
+            margin-bottom: 0.75rem;
+        }
+
+        .info-label {
+            font-weight: 600;
+            display: inline-block;
+            width: 120px;
+        }
+
+        /* Responsive Tweaks */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            .timeline-meta {
+                flex-direction: column;
+            }
+            .info-label {
+                display: block;
+                margin-bottom: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header>
+        <img src="naeimPhoto.jpeg" alt="Naeim Khoshkenar" class="profile-img">
+        <div class="header-info">
+            <h1>Naeim Khoshkenar</h1>
+            <div class="subtitle">Mechanical Engineer & Data Scientist</div>
+            <div class="contact-details">
+                <span>Bargh St., Urmia, Iran-57156</span><br>
+                <span>Phone: <a href="tel:+989147925510">+98 (914) 792-5510</a></span> | 
+                <span>Email: <a href="mailto:khoshkenarnaeim@gmail.com">khoshkenarnaeim@gmail.com</a></span> | 
+                <span><a href="https://www.linkedin.com/in/naeim-khoshkenar-4a4091416/" target="_blank">LinkedIn</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- INTERESTS -->
+    <section>
+        <h2>Interests</h2>
+        <p>Data Analysis, Energy Systems</p>
+    </section>
+
+    <!-- CORE QUALIFICATIONS -->
+    <section>
+        <h2>Core Qualifications</h2>
+        <ul class="grid-list">
+            <li>CAD Designer</li>
+            <li>Energy System Designer</li>
+            <li>Membrane Expert</li>
+            <li>Data Analysis</li>
+            <li>Statistical Thinking</li>
+            <li>Quantitative Problem Solving</li>
+            <li>Technical Documentation</li>
+            <li>Academic Tutoring</li>
+        </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+        
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>Minor in Data Science</div>
+                <span class="timeline-date">2024–Present</span>
+            </div>
+            <div><a href="https://www.iust.ac.ir" target="_blank">Iran University of Science & Technology</a>, Tehran, Iran</div>
+            <div class="gpa">GPA: 4.00</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>M.Sc. in Mechanical Engineering</div>
+                <span class="timeline-date">2023–Present</span>
+            </div>
+            <div><a href="https://www.iust.ac.ir" target="_blank">Iran University of Science & Technology</a>, Tehran, Iran</div>
+            <div class="gpa">GPA: 4.00</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>B.Sc. in Mechanical Engineering</div>
+                <span class="timeline-date">2018–2023</span>
+            </div>
+            <div><a href="https://urmia.ac.ir" target="_blank">Urmia University</a>, Urmia, Iran</div>
+            <div class="gpa">GPA: 3.11</div>
+        </div>
+    </section>
+
+    <!-- WORK EXPERIENCE -->
+    <section>
+        <h2>Work Experience</h2>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>Data Analyst and R&D Expert</div>
+                <span class="timeline-date">2024–Present</span>
+            </div>
+            <div class="timeline-location">CMAN, Urmia, Iran</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>PDMS Designer and Technical Engineer</div>
+                <span class="timeline-date">2023–2024</span>
+            </div>
+            <div class="timeline-location">Sepanta, Tehran, Iran</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>Back-end Designer and Data Collector</div>
+                <span class="timeline-date">2023–2024</span>
+            </div>
+            <div class="timeline-location">Edozo, London, UK</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>CAD Designer</div>
+                <span class="timeline-date">2022–2023</span>
+            </div>
+            <div class="timeline-location">Arsin, Urmia, Iran</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>HSE Supervisor</div>
+                <span class="timeline-date">2021–2022</span>
+            </div>
+            <div class="timeline-location">A Private Gas Company, Urmia, Iran</div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>Private Tutor</div>
+                <span class="timeline-date">2021–2023</span>
+            </div>
+            <div class="timeline-location">Urmia, Iran</div>
+        </div>
+    </section>
+
+    <!-- HONORS -->
+    <section>
+        <h2>Honors</h2>
+        <div class="timeline-item">
+            <div class="timeline-meta">
+                <div>National University Entrance Exam</div>
+                <span class="timeline-date">2023</span>
+            </div>
+            <p>Ranked <strong>196</strong> for the Master's Degree in Mechanical Engineering in Iran.</p>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+        <h2>Skills</h2>
+        <div class="info-row">
+            <span class="info-label">Software:</span>
+            <span>Python, Office, MATLAB, CATIA, AutoCAD, Fluent, Pipeline Studio, PDMS</span>
+        </div>
+        <div class="info-row">
+            <span class="info-label">Professional:</span>
+            <span>Leadership, Teamwork, Critical Thinking, High Work Ethic</span>
+        </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section>
+        <h2>Languages</h2>
+        <div class="info-row"><span class="info-label">English:</span><span>Full Professional Proficiency</span></div>
+        <div class="info-row"><span class="info-label">Persian:</span><span>Native or Bilingual Proficiency</span></div>
+        <div class="info-row"><span class="info-label">Azerbayjani:</span><span>Native or Bilingual Proficiency</span></div>
+        <div class="info-row"><span class="info-label">Turkish:</span><span>Intermediate</span></div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section>
+        <h2>References</h2>
+        
+        <div class="timeline-item" style="margin-bottom: 1.5rem;">
+            <strong>Dr. Ata Chitsaz</strong><br>
+            Department of Mechanical Engineering, <a href="https://urmia.ac.ir" target="_blank">Urmia University</a><br>
+            Email: <a href="mailto:a.chitsaz@urmia.ac.ir">a.chitsaz@urmia.ac.ir</a> | Urmia, Iran
+        </div>
+
+        <div class="timeline-item">
+            <strong>Zohreh Yousefzadeh</strong><br>
+            CMAN<br>
+            Email: <a href="mailto:zhrh1375@gmail.com">zhrh1375@gmail.com</a> | Urmia, Iran
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
